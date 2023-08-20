@@ -1,1 +1,1 @@
-# CODSOFT
+# The company specializes in full-stack engineering, custom application development for iPhone and android, technology consulting, talent management, and recruitment, enabling enterprises to take care of their outsourced product development in a hassle-free manner.
