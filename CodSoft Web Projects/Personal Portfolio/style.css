@@ -1,0 +1,192 @@
+:root
+{
+    --set-color: darkblue;
+    --bg-color: #070c3a;
+    --text-color: rgb(255, 255, 255);
+    --hover: hsl(64, 100%, 51%);
+    --lg-font: 2.2rem;
+    --md-font: 1.8rem;
+    --p-font: 0.941rem;
+}
+
+*{
+    margin: 0; padding: 0; 
+    list-style: none; text-decoration: none;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu' , sans-serif;
+}
+body
+{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+section
+{
+    padding: 50px 10%;
+}
+*::selection
+{
+    background: var(--set-color);
+    color: var(--bg-color);
+}
+header
+{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 30px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -4px 8px #ffffff73 , 2px 2px 5px rgb(82, 79, 79);
+}
+.logo
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.logo span
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: crimson;
+}
+.navbar
+{
+    display: flex;
+}
+.navbar a
+{
+    font-size: 1.1rem;
+    padding: 20px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    letter-spacing: 2px;
+    z-index: 3000;
+} .navbar a:hover{color: var(--hover);}
+#menu-icon
+{
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.2fr 1fr 1fr;
+    gap: 15rem;
+}
+.home-img
+{
+    order: 3; position: relative; right: 420px; top: 0px;
+    border: 0px solid black; border-radius: 2rem;
+    box-shadow: 0px 5px 20px rgb(0, 217, 255); background-color: rgb(3, 3, 54);
+} .home-img image{width: 100%;}
+.home-text
+{
+    position: relative;
+    right: 180px;
+    top: 2rem;
+}
+.home-text span
+{
+    font-size: 3rem;    
+    font-weight: 500;
+}
+.home-text h1
+{
+    font-size: 5rem;
+    letter-spacing: 7px;
+    font-family: 'Dosis' , sans-serif;
+}
+.home-text h2
+{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.home-text p
+{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.7rem 0 1rem;
+    width: 25rem;
+}
+.social
+{
+    display: flex;
+    flex-direction: column;
+}
+.social a
+{
+    margin-bottom: 1rem;
+    font-size: 22px;
+    color: var(--text-color);
+    position: relative;
+    top: 40px;
+    right: 50px;
+} .social a:hover{color: var(--hover);}
+.btn
+{
+    display: inline-block;
+    background-color: var(--set-color);
+    color: #fff;
+    padding: 0.7rem 1.3rem;
+    font-size: var(--p-font);
+    font-family: 'Dosis' , sans-serif;
+    letter-spacing: 3px;
+    border: 0.6rem;
+    border-radius: 10px;
+} .btn:hover{background: rgb(5, 50, 102);}
+
+.about-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.about-img img
+{
+    width: 80%;
+    border-radius: 0.7rem;
+    margin-top: 20px;
+    box-shadow: 0px 5px 20px rgb(0, 225, 255);
+}
+.about-text p
+{
+    font-size: var(--p-font);
+    letter-spacing: 2px;
+    font-weight: 400;   
+    text-align: justify;
+    font-family: 'Dosis' , sans-serif;
+}
+.information
+{
+    margin: 2rem 0 2.4rem;
+    font-size: var(--md-font);
+}
+.information .info-box
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.information .info-box span
+{
+    font-weight: 400;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
